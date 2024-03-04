@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topNav{
+    overflow: hidden;
+    background-color: #E0E0E0;
+}
+
+.topNav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+    font-size: 17px;
+}
+
+.topNavRight {
+    float: right;
+}
+
+.topNav a:hover {
+    background-color: grey;
+    color: black;
+}
+
+.topNav a.active {
+    background-color: #FF6F61;
+    color: white;
+}
+
+header img{
+    width: 50%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    opacity: 1;
+    border-radius: 16px;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #04aa60;
+    text-align: justify;
+}
+
+ h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+ }
+
+ .text{
+    padding-left: 2em;
+    padding-right: 2em;
+ }
+
+ .imgTextOverlay{
+    position: relative;
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+ }
+
+ .imgTextOverlay img{
+    width: 100%;
+ }
+
+ .topCenter{
+    position: absolute;
+    top: 8px;
+    left: 25%;
+    right: 25%;
+ }
+
+ #filters{
+    filter: grayscale(100%); 
+    /*filter: sepia(100%);*/
+    /*filter: blur(2px);*/
+ }
+
+ #filters:hover{
+    filter: none;
+ }
+
+ .container{
+    position: relative;
+    width: 50%;
+ }
+
+ .image{
+    display: block;
+    width: 100%;
+    height: auto;
+ }
+
+ .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 3.5s ease;
+    background-color: #04aa60;
+ }
+
+ .container:hover .overlay{
+    opacity: 1;
+ }
+
+ .overlayText{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+ }
