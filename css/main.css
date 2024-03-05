@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .topNav{
@@ -44,7 +44,7 @@ header img{
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    color: #04aa60;
+    color: black;
     text-align: justify;
 }
 
@@ -52,6 +52,7 @@ p {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 3px;
+    color: #FF6F61;
  }
 
  .text{
@@ -77,50 +78,90 @@ p {
     right: 25%;
  }
 
- #filters{
-    filter: grayscale(100%); 
-    /*filter: sepia(100%);*/
-    /*filter: blur(2px);*/
+ .imageOneWithTextOnSide{
+   display: flex;
+   align-items: center;
+   justify-content: center;
  }
 
- #filters:hover{
-    filter: none;
+ .imageOne{
+   display: block;
+    width: 300%;
+    float: left;
+    margin-top: 5%;
+    border-radius: 16px;  /*border radius not showing*/
  }
 
- .container{
-    position: relative;
-    width: 50%;
- }
-
- .image{
-    display: block;
-    width: 100%;
-    height: auto;
- }
-
- .overlay{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: 3.5s ease;
-    background-color: #04aa60;
- }
-
- .container:hover .overlay{
-    opacity: 1;
- }
-
- .overlayText{
-    color: white;
+ .textImageOne{
     font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    margin-right: 30%;
+    padding-top: 0;
+    float: right;
  }
+
+ .imageTwoWithTextOnSide{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .imageTwo{
+   display: block;
+    width: 300%;
+    float: left;
+    margin-top: 5%;
+    border-radius: 16px;  /*border radius not showing*/
+ }
+
+ .textImageTwo{
+   font-size: 20px;
+   margin-right: 30%;
+   padding-top: 0;
+   float: right;
+}
+
+ .block {
+   display: block;
+   width: 25%;
+   border: none;
+   background-color: #FF6F61;
+   padding: 14px 28px;
+   font-size: 16px;
+   cursor: pointer;
+   text-align: center;
+   border-radius: 16px;
+ }
+ 
+ .footer{   
+      overflow: hidden;
+      background-color: #E0E0E0;
+ }
+
+ .footer a {
+   float: left;
+   color: black;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none; 
+   font-size: 17px;
+}
+
+.footerLeft{
+   float: left;
+}
+
+.footerRight{
+   float: right;
+   padding-right: 10px;
+}
+
+.footerLeft a:hover {
+   background-color: grey;
+   color: black;
+}
+
+.footerLeft a.active {
+   background-color: grey;
+   color: white;
+}
+
